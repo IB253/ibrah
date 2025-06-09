@@ -7,6 +7,10 @@ return [
     | Default Mailer
     |--------------------------------------------------------------------------
     |
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> a873a32 (Initialisation du dépôt)
     | This option controls the default mailer that is used to send all email
     | messages unless another mailer is explicitly specified when sending
     | the message. All additional mailers can be configured within the
@@ -15,6 +19,18 @@ return [
     */
 
     'default' => env('MAIL_MAILER', 'log'),
+<<<<<<< HEAD
+=======
+=======
+    | This option controls the default mailer that is used to send any email
+    | messages sent by your application. Alternative mailers may be setup
+    | and used as needed; however, this mailer will be used by default.
+    |
+    */
+
+    'default' => env('MAIL_MAILER', 'smtp'),
+>>>>>>> 9114dc0 (projet livreBoutique)
+>>>>>>> a873a32 (Initialisation du dépôt)
 
     /*
     |--------------------------------------------------------------------------
@@ -25,6 +41,10 @@ return [
     | their respective settings. Several examples have been configured for
     | you and you are free to add your own as your application requires.
     |
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> a873a32 (Initialisation du dépôt)
     | Laravel supports a variety of mail "transport" drivers that can be used
     | when delivering an email. You may specify which one you're using for
     | your mailers below. You may also add additional mailers if needed.
@@ -32,10 +52,25 @@ return [
     | Supported: "smtp", "sendmail", "mailgun", "ses", "ses-v2",
     |            "postmark", "resend", "log", "array",
     |            "failover", "roundrobin"
+<<<<<<< HEAD
+=======
+=======
+    | Laravel supports a variety of mail "transport" drivers to be used while
+    | sending an e-mail. You will specify which one you are using for your
+    | mailers below. You are free to add additional mailers as required.
+    |
+    | Supported: "smtp", "sendmail", "mailgun", "ses",
+    |            "postmark", "log", "array", "failover"
+>>>>>>> 9114dc0 (projet livreBoutique)
+>>>>>>> a873a32 (Initialisation du dépôt)
     |
     */
 
     'mailers' => [
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> a873a32 (Initialisation du dépôt)
 
         'smtp' => [
             'transport' => 'smtp',
@@ -47,12 +82,30 @@ return [
             'password' => env('MAIL_PASSWORD'),
             'timeout' => null,
             'local_domain' => env('MAIL_EHLO_DOMAIN', parse_url(env('APP_URL', 'http://localhost'), PHP_URL_HOST)),
+<<<<<<< HEAD
+=======
+=======
+        'smtp' => [
+            'transport' => 'smtp',
+            'host' => env('MAIL_HOST', 'smtp.mailgun.org'),
+            'port' => env('MAIL_PORT', 587),
+            'encryption' => env('MAIL_ENCRYPTION', 'tls'),
+            'username' => env('MAIL_USERNAME'),
+            'password' => env('MAIL_PASSWORD'),
+            'timeout' => null,
+            'auth_mode' => null,
+>>>>>>> 9114dc0 (projet livreBoutique)
+>>>>>>> a873a32 (Initialisation du dépôt)
         ],
 
         'ses' => [
             'transport' => 'ses',
         ],
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> a873a32 (Initialisation du dépôt)
         'postmark' => [
             'transport' => 'postmark',
             // 'message_stream_id' => env('POSTMARK_MESSAGE_STREAM_ID'),
@@ -63,11 +116,30 @@ return [
 
         'resend' => [
             'transport' => 'resend',
+<<<<<<< HEAD
+=======
+=======
+        'mailgun' => [
+            'transport' => 'mailgun',
+        ],
+
+        'postmark' => [
+            'transport' => 'postmark',
+>>>>>>> 9114dc0 (projet livreBoutique)
+>>>>>>> a873a32 (Initialisation du dépôt)
         ],
 
         'sendmail' => [
             'transport' => 'sendmail',
+<<<<<<< HEAD
             'path' => env('MAIL_SENDMAIL_PATH', '/usr/sbin/sendmail -bs -i'),
+=======
+<<<<<<< HEAD
+            'path' => env('MAIL_SENDMAIL_PATH', '/usr/sbin/sendmail -bs -i'),
+=======
+            'path' => env('MAIL_SENDMAIL_PATH', '/usr/sbin/sendmail -t -i'),
+>>>>>>> 9114dc0 (projet livreBoutique)
+>>>>>>> a873a32 (Initialisation du dépôt)
         ],
 
         'log' => [
@@ -85,6 +157,10 @@ return [
                 'smtp',
                 'log',
             ],
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> a873a32 (Initialisation du dépôt)
             'retry_after' => 60,
         ],
 
@@ -97,6 +173,12 @@ return [
             'retry_after' => 60,
         ],
 
+<<<<<<< HEAD
+=======
+=======
+        ],
+>>>>>>> 9114dc0 (projet livreBoutique)
+>>>>>>> a873a32 (Initialisation du dépôt)
     ],
 
     /*
@@ -104,9 +186,21 @@ return [
     | Global "From" Address
     |--------------------------------------------------------------------------
     |
+<<<<<<< HEAD
     | You may wish for all emails sent by your application to be sent from
     | the same address. Here you may specify a name and address that is
     | used globally for all emails that are sent by your application.
+=======
+<<<<<<< HEAD
+    | You may wish for all emails sent by your application to be sent from
+    | the same address. Here you may specify a name and address that is
+    | used globally for all emails that are sent by your application.
+=======
+    | You may wish for all e-mails sent by your application to be sent from
+    | the same address. Here, you may specify a name and address that is
+    | used globally for all e-mails that are sent by your application.
+>>>>>>> 9114dc0 (projet livreBoutique)
+>>>>>>> a873a32 (Initialisation du dépôt)
     |
     */
 
@@ -115,4 +209,29 @@ return [
         'name' => env('MAIL_FROM_NAME', 'Example'),
     ],
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+    /*
+    |--------------------------------------------------------------------------
+    | Markdown Mail Settings
+    |--------------------------------------------------------------------------
+    |
+    | If you are using Markdown based email rendering, you may configure your
+    | theme and component paths here, allowing you to customize the design
+    | of the emails. Or, you may simply stick with the Laravel defaults!
+    |
+    */
+
+    'markdown' => [
+        'theme' => 'default',
+
+        'paths' => [
+            resource_path('views/vendor/mail'),
+        ],
+    ],
+
+>>>>>>> 9114dc0 (projet livreBoutique)
+>>>>>>> a873a32 (Initialisation du dépôt)
 ];

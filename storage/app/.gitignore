@@ -1,4 +1,11 @@
 *
+<<<<<<< HEAD
 !private/
+=======
+<<<<<<< HEAD
+!private/
+=======
+>>>>>>> 9114dc0 (projet livreBoutique)
+>>>>>>> a873a32 (Initialisation du dépôt)
 !public/
 !.gitignore

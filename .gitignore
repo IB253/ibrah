@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> a873a32 (Initialisation du dépôt)
 /.phpunit.cache
 /node_modules
 /public/build
@@ -11,13 +15,38 @@
 .env.production
 .phpactor.json
 .phpunit.result.cache
+<<<<<<< HEAD
+=======
+=======
+/node_modules
+/public/hot
+/public/storage
+/storage/*.key
+/vendor
+.env
+.env.backup
+.phpunit.result.cache
+docker-compose.override.yml
+>>>>>>> 9114dc0 (projet livreBoutique)
+>>>>>>> a873a32 (Initialisation du dépôt)
 Homestead.json
 Homestead.yaml
 npm-debug.log
 yarn-error.log
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> a873a32 (Initialisation du dépôt)
 /auth.json
 /.fleet
 /.idea
 /.nova
 /.vscode
 /.zed
+<<<<<<< HEAD
+=======
+=======
+/.idea
+/.vscode
+>>>>>>> 9114dc0 (projet livreBoutique)
+>>>>>>> a873a32 (Initialisation du dépôt)

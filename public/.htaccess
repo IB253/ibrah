@@ -9,10 +9,19 @@
     RewriteCond %{HTTP:Authorization} .
     RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> a873a32 (Initialisation du dépôt)
     # Handle X-XSRF-Token Header
     RewriteCond %{HTTP:x-xsrf-token} .
     RewriteRule .* - [E=HTTP_X_XSRF_TOKEN:%{HTTP:X-XSRF-Token}]
 
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 9114dc0 (projet livreBoutique)
+>>>>>>> a873a32 (Initialisation du dépôt)
     # Redirect Trailing Slashes If Not A Folder...
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_URI} (.+)/$

@@ -1,4 +1,12 @@
+<<<<<<< HEAD
 * text=auto eol=lf
+=======
+<<<<<<< HEAD
+* text=auto eol=lf
+=======
+* text=auto
+>>>>>>> 9114dc0 (projet livreBoutique)
+>>>>>>> a873a32 (Initialisation du dépôt)
 
 *.blade.php diff=html
 *.css diff=css
@@ -8,4 +16,11 @@
 
 /.github export-ignore
 CHANGELOG.md export-ignore
+<<<<<<< HEAD
 .styleci.yml export-ignore
+=======
+<<<<<<< HEAD
+.styleci.yml export-ignore
+=======
+>>>>>>> 9114dc0 (projet livreBoutique)
+>>>>>>> a873a32 (Initialisation du dépôt)
